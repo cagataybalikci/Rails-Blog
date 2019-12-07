@@ -26,8 +26,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 
-# Make errors better looking
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
+
+
 
 
 # Bulma -CSS
@@ -57,7 +57,9 @@ group :development do
   gem 'guard', '~> 2.16', '>= 2.16.1'
 
   # guard-live reload
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # Make errors better looking
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
 group :test do
